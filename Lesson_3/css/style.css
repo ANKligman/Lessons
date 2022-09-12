@@ -1,0 +1,43 @@
+
+a {
+	color:green
+}
+
+div.text{
+	color:blue
+}
+
+.text {
+	color:pink
+}
+#top {
+	color:aqua
+}
+#top1 {
+	color:blueviolet
+}
+#top2 {
+color:aquamarine
+}
+#top3 {
+color:coral
+}
+#top4 {
+	color:chartreuse
+}
+p.lesson {
+color:brown
+}
+.human,
+.human1{
+	color:deeppink
+}
+.tilda~p{
+	color:maroon
+}
+.omega + h3 {
+	color:gold
+}
+.bottom > h3{
+	color:yellowgreen
+}
