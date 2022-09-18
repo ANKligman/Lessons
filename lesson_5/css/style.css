@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap');
+
+@font-face{
+	font-family:"SpriteGraffiti";
+	src:url("../fonts/SpriteGraffiti.woff2")format("woff2"),url("../fonts/SpriteGraffiti.woff")format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family:"UZSans";
+	src:url("../fonts/UZSans-Regular.woff2")format("woff2"),url("../fonts/UZSans-Regular.woff")format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:"UZSans";
+	src:url("../fonts/UZSans-BoldUZSans-Bold.woff2")format("woff2"),url("../fonts/UZSans-Bold.woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:"ptastrasansitalic";
+	src:url("../fonts/pt-astra-sans-italic.woff2")format("woff2"),url("../fonts/pt-astra-sans-italic.woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+#head {
+	font-family: "SpriteGraffiti", serif;
+	color:firebrick;
+	font-weight: 400;
+	font-size: 70px;
+	text-align: center;
+}
+.block .google{
+	font-family: "ptastrasansitalic", serif;
+	font-weight: 400;
+	font-size: 20px;
+	background-color: #77608d;
+	color:antiquewhite;
+}
+.inline .font{
+	font-family:"UZSans";
+	font-weight: 400;
+	font-size: 20px;
+	color:blanchedalmond;
+	text-decoration: line-through;
+	text-indent: 20px;
+	background-color: #7A956B;
+	text-align: justify;
+}
+
+
+div >a{
+	font-family: "UZSans";
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	color:indianred;
+	text-shadow: 2px 2px 2px;
+	margin: 40px;
+}
+.faces{
+	font-family:"IBM Plex Serif";
+	font-weight: 500;
+	color: blue;
+	background-color:bisque;
+	text-align: right;
+	padding: 20px;
+	text-decoration:underline;
+}
+.word{
+	font-family: "UZSans";
+	font-weight: 700;
+	text-shadow: 2px 2px;
+	text-transform: capitalize;
+	padding: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 8px;
+	background-color: violet;
+	margin: 20px;
+	;
+}
+.type{
+	font-family:"IBM Plex Serif";
+	background-color: black;
+	color:crimson;
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+	word-spacing: 30px;
+	text-shadow: 0.5px 0.5px 0.5px #956b6bfe;
+}
+.font1{
+font-family: "IBM Plex Serif";
+font-weight: 600;
+color: maroon;
+font-size: 20px;
+text-indent: 30px;
+padding: 20px;
+text-align: justify;
+line-height: 1.5;
+letter-spacing: 1px;
+}
+
