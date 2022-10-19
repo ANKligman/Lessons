@@ -1,0 +1,148 @@
+
+.wrapper{
+	position: absolute;
+	overflow: hidden;
+	min-height: 100%;
+	min-width: 100%;
+}
+/*
+body{
+	padding: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+	position: relative;
+	height: 2000px;
+}
+.block__element{
+	padding: 20px;
+	text-align: center;
+	color: rgb(0, 10, 16);
+	font-weight: 900;
+}
+.block__element--sticky{
+	background-color: rgb(137, 11, 11);
+	position: sticky;
+	top: 0px;
+}
+.block__element--green {
+	background-color: green;
+
+}
+.block__element--purple {
+	background-color:purple;
+	position: relative;
+	top: 20px;
+	right: 20px;
+	opacity: 0.5;
+}
+.block__element--yellow {
+	background-color:yellowgreen;
+	position: relative;
+	z-index: -1;
+}
+
+.block__element--pink {
+	background-color:hotpink;
+	position: absolute;
+	top: 40px;
+	left: 200px;
+}
+.block__element--fixed{
+	background-color:rgb(101, 101, 213);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 50%;
+}
+*/
+.main{
+	height: 700px;
+	width: 100%;
+	background: url("../img/road.jpg")100% 100% / 100% no-repeat;
+}
+.header {
+}
+
+.main__carroof {
+	background-color: rgb(33, 25, 94);
+	border-radius: 158px 213px 8px 6px / 110px 149px 9px 7px; ;
+	width: 300px;
+	height: 200px;
+	z-index: 1;
+	position: absolute;
+	right: 500px;
+	top: 400px;
+}
+.main__carwindow {
+	background: url("../img/IMG_20220409_172836.jpg") 0 0 /120% no-repeat;
+	border-radius: 0px 213px 8px 6px / 51px 149px 9px 7px;
+	width: 120px;
+	height: 90px;
+	position: absolute;
+	left: 870px;
+	top: 415px;
+	z-index: 1;
+}
+.main__carwindow2{
+	background-color: #9f9f8f;
+	border-radius: 158px 0px 8px 6px / 149px 127px 9px 7px;
+	width: 120px;
+	height: 90px;
+	position: absolute;
+	left: 730px;
+	top: 415px;
+	z-index: 1;
+}
+.main__carframe {
+
+	background-color: rgb(33, 25, 94);
+	border-radius:87px 80px 8px 38px / 94px 58px 9px 27px;;
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	right: 450px;
+	top: 500px;
+}
+.main__carwheel1 {
+	background-color: rgb(15, 15, 15);
+	border-radius: 90% ;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 700px;
+	top: 550px;
+	z-index: 1;
+}
+.main__carwheel2 {
+	background-color: rgb(15, 15, 15);
+	border-radius: 90% ;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 920px;
+	top: 550px;
+	z-index: 1;
+}
+.main__carlights1{
+	background-color: #ed0909;
+	border-radius: 150px 0px 0px 0px;;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 685px;
+	top: 520px;
+	z-index: 1;
+}
+.main__carlights2{
+	background-color: #d9f507;
+	border-radius: 0px 150px 0px 0px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 1030px;
+	top: 520px;
+	z-index: 1;
+}
