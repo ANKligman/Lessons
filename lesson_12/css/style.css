@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body{}
+
+.transform {
+	width: 900px;
+	font-family: Roboto;
+	font-weight: 700;
+	background-color: rgb(150, 140, 140);
+	padding: 50px;
+	margin:0 auto;
+	text-align: center;}
+
+.translate {
+	padding: 10px;
+}
+.translate__body {
+	padding: 10px;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.translate__item{
+	padding: 10px;
+	display: none;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: translate( 40%, 40% );
+}
+	
+.translate__body:hover .translate__item{
+	display: block;
+}
+.scale {
+	padding: 10px;
+}
+.scale__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.scale__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: scale(1.1);
+	display: none;
+}
+.scale__body:hover .scale__item{
+	display: block;
+	opacity: 50%;
+}
+.rotate {
+	padding: 10px;
+}
+.rotate__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.rotate__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	display: none;
+}
+.rotate__body:hover .rotate__item{
+	display: block;
+	transform: rotate(-30deg);
+}
+.skew{
+	padding: 10px;
+}
+.skew__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.skew__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	display: none;
+}
+.skew__body:hover .skew__item{
+	display: block;
+	transform: skew(-10deg, -10deg);
+}
+.matrix{
+	padding: 10px;
+}
+.matrix__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.matrix__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	display: none;
+}
+.matrix__body:hover .matrix__item{
+	display: block;
+	transform: matrix(1, 0, 1, 1, 1, 1);
+}
+.origin {
+	padding: 10px;
+}
+.origin__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.origin__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	display: none;
+}
+.origin__body:hover .origin__item{
+	display: block;
+	transform-origin:0 20px;
+	transform: rotate(-40deg);
+}
+.perspective-origin {
+	padding: 10px;
+}
+.perspective-origin__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+	perspective: 200px;
+	perspective-origin: center;
+}
+.perspective-origin__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: rotateX(-50deg);
+	display: none;
+}
+.perspective-origin__body:hover .perspective-origin__item{
+	display: block;
+}
+.threed {
+	padding: 10px;
+	perspective: 200px;
+}
+.threed__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+	perspective: 200px;
+}
+.threed__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: rotate3d(250,250,2, 10deg);
+	display: none;
+}
+	
+.threed__body:hover .threed__item{
+	display: block;
+}
+.transformstyle {
+	padding: 10px;
+}
+.transformstyle__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+	perspective: 300px;
+	transform-style:preserve-3d;
+
+}
+.transformstyle__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: rotateY(45deg);
+	transition: all 0.3s ease 0s;
+}
+.transformstyle__body:hover .transformstyle__item{
+	transform: rotateY(0deg);
+}
+.backfacevisibility {
+	padding: 10px;
+}
+.backfacevisibility__body {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(139, 78, 78);
+}
+.backfacevisibility__item {
+	width: 200px;
+	height: 200px;
+	background-color: rgb(186, 180, 180);
+	transform: rotateY(180deg);
+	transition: all 0.3s ease 0s;
+}
+
+.backfacevisibility__body:hover .backfacevisibility__item{
+	transform: rotateY(0deg);
+	visibility: visible;
+	opacity: 0.5;
+}
+
+
+
+.car {
+background: url("..//img/background.jpg") no-repeat center / cover;
+width: 900px;
+height: 900px;
+margin: 0 auto;
+}
+.car__container {
+	height: 150px;
+	width: 400px;
+	position: absolute;
+	font-weight: 900;
+}
+.car__body {
+	background: url("../img/car.jpg") no-repeat center / cover;
+	position: absolute;
+	top: 600px;
+	left: 100px;
+	width: 400px;
+	height: 150px;
+}
+.car__wheel--front {
+	background: url("../img/wheel.jpg") no-repeat center / cover;
+	position: absolute;
+	top: 670px;
+	left: 350px;
+	width: 100px;
+	height: 80px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease 0s;
+}
+.car__wheel--rear {
+	background: url("../img/wheel.jpg") no-repeat center / cover;
+	position: absolute;
+	top: 670px;
+	left: 130px;
+	width: 100px;
+	height: 80px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease 0s;
+}
+.car__wheel--front:hover{
+	transform: rotate(360deg);
+}
+.car__wheel--rear:hover{
+	transform: rotate(360deg);
+}
+.car__sun{
+	background: url("../img/solnishko.png") no-repeat center / cover;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 270px;
+	left: 350px;
+	transform: rotate(0deg);
+	transition: all 0.3s ease 0s;
+}
+.car__sun:hover{
+	transform: scale(2);
+}
