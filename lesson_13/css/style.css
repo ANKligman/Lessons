@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body{}
+
+.car {
+background: url("..//img/background.jpg") no-repeat 100% /cover;
+width: 900px;
+height: 900px;
+margin: 0 auto;
+overflow: hidden;
+}
+.car__container {
+	height: 150px;
+	width: 400px;
+	position: relative;
+	font-weight: 900;
+}
+.car__body {
+	background: url("../img/car-removebg-preview.png") no-repeat center / cover;
+	position: relative;
+	top: 600px;
+	left: 100px;
+	width: 400px;
+	height: 150px;
+	animation: car__body 3s linear forwards,
+					car__body-2 3s linear 3s forwards;
+					
+	
+}
+@keyframes car__body{
+	0%{
+		transform: translateX(-500px);
+	}
+	50%{
+		transform: translateX(20px);
+	}
+}
+@keyframes car__body-2{
+	50%{
+		transform: translateX(20px);
+	}
+	100%{
+		transform: translateX(900px);
+	}
+}
+
+.car__wheel--front {
+	background: url("../img/wheel-removebg-preview.png") no-repeat center;
+	background-size: contain;
+	width: 100px;
+	height: 80px;
+	position: relative;
+	left: 264px;
+	top:68px;
+	animation: car__wheel--front 5s linear infinite;
+}
+@keyframes car__wheel--front{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+}
+}
+
+.car__wheel--rear {
+	background: url("../img/wheel-removebg-preview.png") no-repeat center ;
+	width: 100px;
+	height: 80px;
+	left: 20px;
+	bottom:10px;
+	background-size: contain;
+	animation: car__wheel--rear 5s linear infinite;
+	position: relative;
+}
+@keyframes car__wheel--rear{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+}
+}
+
+.car__sun{
+	background: url("../img/solnishko-removebg-preview.png") no-repeat center / cover;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 270px;
+	left: 750px;
+	animation: car__sun 5s linear 0s infinite backwards;
+	border-radius: 50%;
+	
+}
+@keyframes car__sun{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		box-shadow: yellow 100px 100px;
+		opacity: 0.5;
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.car__butterfly{
+	background: url("..//img/babochkayellow.png")no-repeat center;
+	background-size: contain;
+	width: 100px;
+	height: 100px;	
+	position: relative;
+	top: 450px;
+	left: 700px;
+	animation: car__butterfly 5s cubic-bezier(0.86, 0.01, 0, 1) 2s infinite backwards;
+}
+@keyframes car__butterfly{
+	0%{
+		
+	}
+	50%{
+		transform: translateY(-200%)rotate(-100deg);
+		
+	}
+	100%{
+	transform: translateX(-800%);
+	top: 20px;	
+	}
+}
+
+
+
+
+
+
+
+.transition {
+	margin: 50px;
+	font-weight: 900;
+	padding: 20px;
+}
+.transition__duration {
+	width: 200px;
+	height: 200px;
+	background: url("..//img/butterflyblue.png")no-repeat center / contain;
+	transform: rotateX(0deg);
+	font-weight: 900;
+}
+.transition__duration:hover{
+	transition-duration: 0.8s;
+	transform: rotateY(180deg);
+}
+
+.transition__property {
+	width: 200px;
+	height: 200px;
+	background: url("..//img/butterflyblue.png")no-repeat center / contain;
+	transform: rotateX(0deg);
+	font-weight: 900;
+	color:blue;
+}
+.transition__property:hover{
+	transition-property: color;
+	color: darkgoldenrod;
+}
+.transition__delay {
+	width: 200px;
+	height: 200px;
+	background: url("..//img/butterflyblue.png")no-repeat center / contain;
+	transform: translateX(0%);
+	font-weight: 900;
+}
+.transition__delay:hover{
+	transition-duration: 1s;
+	transform: translateX(200%);
+	transition-delay: 0.8s;
+}
+
+.transition__timing-function {
+	width: 200px;
+	height: 200px;
+	background: url("..//img/butterflyblue.png")no-repeat center / contain;
+	transform: translateX(0%);
+	transform: rotateY(0deg);
+	font-weight: 900;
+}
+.transition__timing-function:hover{
+	transition-duration: 1s;
+	transform: translateX(200%);
+	transition-delay: 0.8s;
+	transform: rotateY(180deg);
+	transition-timing-function:cubic-bezier(.06,.78,.75,.05);
+}
+
+.transition__timing-function-linear {
+	width: 200px;
+	height: 200px;
+	background: url("..//img/butterflyblue.png")no-repeat center / contain;
+	transform: translateX(0%);
+	transform: rotateY(0deg);
+	font-weight: 900;
+}
+.transition__timing-function-linear:hover{
+	transition-duration: 1s;
+	transform: translateX(200%);
+	transition-delay: 0.9s;
+	transform: rotateY(180deg);
+	transition-timing-function:linear;
+}
+.animation {
+	margin: 50px;
+	font-weight: 900;
+	padding: 20px;
+}
+.animation__name{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__name 2s ease backwards;
+}
+@keyframes animation__name{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__duration{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__duration 5s ease backwards;
+}
+@keyframes animation__duration{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__timing-function{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__timing-function 5s cubic-bezier(.97,1.51,.06,-0.39) backwards;
+}
+@keyframes animation__timing-function{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__interation-count{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__interation-count 3s cubic-bezier(.97,1.51,.06,-0.39) backwards;
+	animation-iteration-count: 4;
+}
+@keyframes animation__interation-count{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__direction{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__interation-count 3s cubic-bezier(.97,1.51,.06,-0.39) backwards;
+	animation-direction: alternate-reverse;
+}
+@keyframes animation__direction{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__play-state{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__interation-count 3s ease infinite backwards;
+}
+@keyframes play-state{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__play-state:hover{
+	animation-play-state: paused;
+}
+.animation__delay{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__interation-count 3s ease;
+	animation-delay: 3s;
+}
+@keyframes delay{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__fill-mode{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: animation__interation-count 3s ease forwards;
+	animation-delay: 3s;
+}
+@keyframes fill-mode{
+	0%{}
+	100%{
+		transform: scaleX(2);
+	}
+}
+.animation__universal{
+	background: url("..//img/smile-removebg-preview.png") no-repeat center/ contain;
+	width: 300px;
+	height: 200px;
+	animation: universal 1s linear 1.5 reverse 0.6s backwards;
+}
+@keyframes universal{
+	0%{
+		transform: scaleX(0.5);
+	}
+
+	100%{
+		transform: scaleX(2);
+	}
+}
+
+
+.text{
+	padding: 50px;
+}
+.text___container :not(:last-child){
+	margin-bottom: 20px;
+}
+.text__h1 {
+	font-size: 30px;
+	font-weight: 700;
+	animation: text__h1 2s ease forwards;
+	opacity: 0;
+}
+@keyframes text__h1{
+	0%{
+		transform: translate(0px,50%);
+		opacity: 0;
+		}
+	100%{
+		transform: translate(0px,0px);
+		opacity: 1;
+	}
+}
+	.text__h2{
+	font-size: 20px;
+	font-weight: 700;
+	animation: text__h2 3s ease 2s forwards;
+	opacity: 0;
+}
+@keyframes text__h2{
+	0%{
+		transform: translate(50%,0px);
+		opacity: 0;
+		background-color:burlywood;
+	}
+	100%{
+		transform: translate(0px,0px);
+		opacity: 1;
+		}
+}
+
+.text__containe{
+	line-height: 1.5;
+	font-size: 18px;
+	opacity: 0.5;
+}
+
+.text__containe:hover{
+	animation: text__containe 6s ease infinite;
+}
+
+@keyframes text__containe{
+	0%{
+		transform: rotateX(360deg);
+		background-color: beige;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(360deg);
+		background-color: burlywood;
+		}
+}
