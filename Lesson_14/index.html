@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zzx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 14 FLEX</title>
+	</head>
+	<body class="page">
+		<div class="wrapper">
+			<header class="header">
+				Я ХЕДЕР
+			</header>
+			<main>
+				<div class="home">
+					<div class="title__flex">ВЛАСТИВОСТІ ДЛЯ FLEX КОНТЕЙНЕРА</div>
+					<div class="title__flex">FLEX-WRAP</div>
+					<div class="flex__nowrap">flex-wrap: nowrap;<br>flex-елементи НЕ можуть переміщатись на наступні рядки flex-контейнера
+						<div class="flex__nowrap nowrap__flex">
+							<div class="nowrap__flex element__nowrap"><span>1</span></div>
+							<div class="nowrap__flex element__nowrap"><span>2</span></div>
+							<div class="nowrap__flex element__nowrap"><span>3</span></div>
+							<div class="nowrap__flex element__nowrap"><span>4</span></div>
+							<div class="nowrap__flex element__nowrap"><span>5</span></div>
+							<div class="nowrap__flex element__nowrap"><span>6</span></div>
+						</div>
+					</div>
+					<div class="flex__wrap">flex-wrap: wrap;<br>flex-елементи МОЖУТЬ переміщатись на наступні рядки flex-контейнера
+						<div class="flex__wrap wrap__flex">
+							<div class="wrap__flex element__wrap"><span>1</span></div>
+							<div class="wrap__flex element__wrap"><span>2</span></div>
+							<div class="wrap__flex element__wrap"><span>3</span></div>
+							<div class="wrap__flex element__wrap"><span>4</span></div>
+							<div class="wrap__flex element__wrap"><span>5</span></div>
+							<div class="wrap__flex element__wrap"><span>6</span></div>
+						</div>
+					</div>
+					<div class="flex__wrap-reverse">flex-wrap: wrap-reserve;<br>flex-елементи МОЖУТЬ переміщатись на наступні рядки flex-контейнера, але у зворотньому порядку
+						<div class="flex__wrap-reverse wrap-revers__flex">
+							<div class="wrap-revers__flex element__wrap-revers"><span>1</span></div>
+							<div class="wrap-revers__flex element__wrap-revers"><span>2</span></div>
+							<div class="wrap-revers__flex element__wrap-revers"><span>3</span></div>
+							<div class="wrap-revers__flex element__wrap-revers"><span>4</span></div>
+							<div class="wrap-revers__flex element__wrap-revers"><span>5</span></div>
+							<div class="wrap-revers__flex element__wrap-revers"><span>6</span></div>
+						</div>
+					</div>
+					<div class="title__flex">justify-content</div>
+					<div class="flex__justify">justify-content: flex; flex-start; flex-end; center; space-between; space-around; space-evenly;<br>визначає вирівнювання вздовж основної осі коли(коли є простір для переміщення flex елементів)
+						<div class="flex__justify justify__flex">
+							<div class="justify__flex element__justify"><span>1</span></div>
+							<div class="justify__flex element__justify"><span>2</span></div>
+							<div class="justify__flex element__justify"><span>3</span></div>
+						</div>
+					</div>
+					<div class="title__flex">align-items</div>
+					<div class="flex__align">align-items: stretch(за замовчуванням);flex-start;flex-end;center;basiline; <br>визначає вирівнювання вздовж поперечної осі
+						<div class="flex__align align__flex">
+							<div class="align__flex element__align"><span>1</span></div>
+							<div class="align__flex element__align"><span>2</span></div>
+							<div class="align__flex element__align"><span>3</span></div>
+						</div>
+					</div>
+					<div class="title__flex">flex-direction</div>
+					<div class="flex__direction">flex-direction: row(за замовчуванням);row-revers;column;column-revers; <br>вcтановлює основну вісь
+						<div class="flex__direction direction__flex">
+							<div class="direction__flex element__direction"><span>1</span></div>
+							<div class="direction__flex element__direction"><span>2</span></div>
+							<div class="direction__flex element__direction"><span>3</span></div>
+							<div class="direction__flex element__direction"><span>4</span></div>
+							<div class="direction__flex element__direction"><span>5</span></div>
+						</div>
+					</div>
+					<div class="title__flex">gap</div>
+					<div class="flex__gap">gap:(...)px; column-gap:(проміжок між колонками); row-gap:(проміжок між рядками)<br>вcтановлює проміжок між flex-елементами(погано працює з відсотковими basis)
+						<div class="flex__gap gap__flex">
+							<div class="gap__flex element__gap"><span>1</span></div>
+							<div class="gap__flex element__gap"><span>2</span></div>
+							<div class="gap__flex element__gap"><span>3</span></div>
+							<div class="gap__flex element__gap"><span>4</span></div>
+							<div class="gap__flex element__gap"><span>5</span></div>
+						</div>
+					</div>
+					<div class="title__flex">vertical-align</div>
+					<div class="flex__vertical">vertical-align:top;bottom;middle;<br>вcтановлює вертикальне вирівнювання рядкового, або блочно рядкового елементу
+						<div class="flex__vertical vertical__flex">
+							<span>1</span>
+							<span>2</span>
+							<span>3</span>
+							<div class="vertical__flex element__vertical"><span>4</span></div>
+							<div class="vertical__flex element__vertical"><span>5</span></div>
+						</div>
+					</div>
+					<div class="title__flex">ВЛАСТИВОСТІ ДЛЯ FLEX ЕЛЕМЕНТІВ</div>
+					<div class="title__flex">align-self</div>
+					<div class="flex__self">align-self:flex-start; center; flex-end;<br> перевизначає для конкретного flex-елемента вирівнювання вздовж поперечної осі
+						<div class="flex__self self__flex">
+							<div class="self__element element__self"><span>1 </span></div>
+							<div class="self__element element__self"><span>2</span></div>
+							<div class="self__element element__self"><span>3</span></div>
+						</div>
+					</div>
+					<div class="title__flex">flex-grow</div>
+					<div class="flex__grow">flex-grow:0-заборонено; 1-дозволено;(за замовченням-0)<br> визначає можливість елемента збільшуватись у розмірі, при необхідності заповнюючи весь flex-контейнер
+						<div class="flex__grow grow__flex">
+							<div class="grow__element element__grow"><span>1 </span></div>
+							<div class="grow__element element__grow"><span>2 </span></div>
+							<div class="grow__element element__grow"><span>3 </span></div>
+						</div>
+					</div>
+					<div class="title__flex">flex-shrink</div>
+					<div class="flex__shrink">flex-shrink:0-заборонено; 1-дозволено;(за замовченням-1)<br> визначає можливість елемента зменшуватись у розмірі, при необхідності заповнюючи весь flex-контейнер
+						<div class="flex__shrink shrink__flex">
+							<div class="shrink__element element__shrink"><span>123 </span></div>
+							<div class="shrink__element element__shrink"><span>2 </span></div>
+							<div class="shrink__element element__shrink"><span>3 </span></div>
+						</div>
+					</div>
+					<div class="title__flex">flex-basis</div>
+					<div class="flex__basis">flex-basis:за замовченням-auto(розмір за контентом)<br> визначає базовий розмір елемента за умовчанням, до розподілу простіру, що залишився. значення можуть бути у відсотках, пікселях тощо. 
+						<div class="flex__basis basis__flex">
+							<div class="basis__element element__basis"><span>123 </span></div>
+							<div class="basis__element element__basis"><span>2 </span></div>
+							<div class="basis__element element__basis"><span>3 </span></div>
+						</div>
+					</div>
+					<div class="title__flex">flex-universe</div>
+					<div class="flex__universe">flex-universe:універсальний запис<br> flex:1 0 25%; 
+						<div class="flex__universe universe__flex">
+							<div class="universe__element element__universe"><span>1 </span></div>
+							<div class="universe__element element__universe"><span>2 </span></div>
+							<div class="universe__element element__universe"><span>3 </span></div>
+							<div class="universe__element element__universe"><span>4 </span></div>
+							<div class="universe__element element__universe"><span>5 </span></div>
+							<div class="universe__element element__universe"><span>6 </span></div>
+							<div class="universe__element element__universe"><span>7 </span></div>
+							<div class="universe__element element__universe"><span>8 </span></div>
+						</div>
+					</div>
+					<div class="title__flex">order</div>
+					<div class="flex__order">order:2;<br> керує порядком, в якому розташовуються flex-елементи всередині flex-контейнера.
+						<div class="flex__order order__flex">
+							<div class="order__element element__order"><span>1 </span></div>
+							<div class="order__element element__order"><span>2 </span></div>
+							<div class="order__element element__order"><span>3 </span></div>
+						</div>
+					</div>
+					<div class="title__flex">PRACTIСE<br>ФІШКА З КОЛОНКАМИ</div>
+						<div class="row">
+							<div class="column">
+								<div class="item">
+									Колонка №1
+								</div>
+							</div>
+							<div class="column">
+								<div class="item">
+									Колонка №2
+								</div>
+							</div>
+							<div class="column">
+								<div class="item">
+									Колонка №3
+								</div>
+							</div>
+							<div class="column">
+								<div class="item">
+									Колонка №4
+								</div>
+							</div>
+						</div>
+						<div class="title__flex">ПРИКЛАД З ПОСИЛАННЯМ</div>
+						<div class="text-block">
+							<h1 class="text-block__title">Я заголовок</h1>
+							<div class="text-block__text">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nostrum distinctio praesentium modi sunt. Nesciunt, incidunt ipsa dicta fugit a doloribus, fugiat dignissimos animi, labore dolore ducimus dolores atque libero?
+							</div>
+							<a href="" class="text-block__link">Я посилання</a>
+						</div>
+						<div class="title__flex">ПРИКЛАД З КАРТКАМИ</div>
+						<div class="page__block">
+							<div class="cards">
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+										<img src="img/background.jpg" alt="">
+										</div>
+										<div class="item-card__text">Lorem ipsum dolor sit amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										</div>
+										<a href="" class="item-card__button">Batton</a>
+									</div>
+								</div>
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+											<img src="img/background.jpg" alt="">
+										</div>
+										<div class="item-card__text">Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										</div>
+										<a href="" class="item-card__button">Batton</a>
+									</div>
+								</div>
+								<div class="cards__column">
+									<div class="cards__item item-card">
+										<div class="item-card__image">
+											<img src="img/background.jpg" alt="">
+										</div>
+										<div class="item-card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+										</div>
+										<a href="" class="item-card__button">Batton</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page__block">
+							<a href="" class="link">Я посилання</a>
+						</div>
+						<div class="page__block">
+							<div class="object">
+								<div class="object__icon"></div>	
+									<div class="object__text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae modi reprehenderit aperiam iusto sit fugiat id, rem quas, cupiditate nemo magnam vel vero ea molestiae commodi? Ex totam ullam aperiam obcaecati saepe, quam dolore accusamus? Nostrum vero, tempore ullam at facere atque harum, dolorem, optio totam facilis iusto cum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe adipisci culpa totam fuga earum neque reprehenderit illo molestiae fugiat dignissimos voluptatem amet in exercitationem minus modi, unde ratione excepturi.
+									</div>
+							</div>
+						</div>
+						<div class="page__block">
+							<img class="image" style="width: 100px;" src="img/background.jpg" alt="">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati voluptate porro suscipit nobis aut nam voluptas laudantium molestiae ratione nostrum est maxime animi, facilis sequi voluptates ducimus minus nemo, quisquam optio! Iure, optio mollitia? Blanditiis, unde dolorem ratione earum reiciendis illum tenetur deserunt dolore asperiores possimus atque perspiciatis maiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nulla, eaque veniam nemo provident iure unde autem. Laboriosam ut fugit iure repellat odit magni hic consectetur soluta? Officiis, delectus itaque!
+						</div>
+						<div class="page__block">
+							<div class="example">
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/background.jpg" alt="">
+									</div>	
+										<div class="item-example__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic nobis repellat necessitatibus harum eos cum. Exercitationem tempora culpa id dolorem illum nemo magni obcaecati doloribus corporis odit, praesentium vero qui, provident perferendis similique voluptatum laboriosam! Ab perferendis aut aliquam perspiciatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reiciendis.
+										</div>
+									</div>
+							</div>
+							
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/background.jpg" alt="">
+									</div>	
+										<div class="item-example__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic nobis repellat necessitatibus harum eos cum. Exercitationem tempora culpa id dolorem illum nemo magni obcaecati doloribus corporis odit, praesentium vero qui, provident perferendis similique voluptatum laboriosam! Ab perferendis aut aliquam perspiciatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reiciendis.
+										</div>
+									</div>
+							
+							
+								<div class="example__item item-example">
+									<div class="item-example__image">
+										<img src="img/background.jpg" alt="">
+									</div>	
+										<div class="item-example__text">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic nobis repellat necessitatibus harum eos cum. Exercitationem tempora culpa id dolorem illum nemo magni obcaecati doloribus corporis odit, praesentium vero qui, provident perferendis similique voluptatum laboriosam! Ab perferendis aut aliquam perspiciatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, reiciendis.
+										</div>
+									</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>	
+			</main>
+			<footer class="footer">
+				Я ФУТЕР
+			</footer>
+		</div>
+	</body>
+</html>
